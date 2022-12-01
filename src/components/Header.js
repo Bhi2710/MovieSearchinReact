@@ -61,6 +61,9 @@ const Header = _ =>{
     if(e.code === "Enter"){
       const query = e.target.value;
       navigate(`/search?q=${query}`)
+    }else if(e.keyCode === 66){
+      const query = e.target.value;
+      navigate(`/search?q=${query}`)
     }
   }
 
