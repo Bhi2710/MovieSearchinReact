@@ -58,7 +58,7 @@ const Header = _ =>{
   const navigate = useNavigate();
 
   const keyPressed = e => {
-    if(e.code === "enter"){
+    if(e.code === "Enter"){
       const query = e.target.value;
       navigate(`/search?q=${query}`)
     }
