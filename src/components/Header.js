@@ -58,7 +58,7 @@ const Header = _ =>{
   const navigate = useNavigate();
 
   const keyPressed = e => {
-    if(e.code === "Enter"){
+    if(e.code === "enter"){
       const query = e.target.value;
       navigate(`/search?q=${query}`)
     }
@@ -86,7 +86,7 @@ const Header = _ =>{
               <StyledInputBase
                 placeholder="Search…"
                 inputProps={{ 'aria-label': 'search' }}
-                onKeyPress={keyPressed}
+                onKeyUp={keyPressed}
               />
             </Search>
           </Toolbar>
