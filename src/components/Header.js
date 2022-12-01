@@ -86,7 +86,7 @@ const Header = _ =>{
               <StyledInputBase
                 placeholder="Search…"
                 inputProps={{ 'aria-label': 'search' }}
-                onKeyUp={keyPressed}
+                onKeyPress={keyPressed}
               />
             </Search>
           </Toolbar>
